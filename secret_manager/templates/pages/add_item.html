@@ -11,9 +11,9 @@ Secret manager - Create Item
 
 {% block dashboard_content%}
 <div id="div-title">
-    <img src="../../static/img/add item title.png" id="title-additems">
+    <img src="../../static/img/createnewitem.png" id="title-additems">
     <div>
-        <hr id="margin-title">
+        <div class="top-sidebar"></div>
     </div> 
 </div>
 <div id="div-passcontent">
@@ -24,6 +24,13 @@ Secret manager - Create Item
         <input type="submit" value="submit">
     </form>
 </div>
-
+<ul>
+    {% for item in passwords %}
+        <li>
+            <label for="">{{ item.name }}</label>
+            <input type="password" name="" id="" value="{{ item. password }}">
+        </li>
+    {% endfor %}
+</ul>
 
 {% endblock dashboard_content%}

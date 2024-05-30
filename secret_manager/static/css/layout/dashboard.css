@@ -1,8 +1,9 @@
+
 .dashboard-container {
     display: grid;
     height: 100vh;
     width: auto;
-    background-color: #383838;
+    background-color: #ffffff;
     grid-template-columns: 450px 1fr;
 }
 
@@ -11,28 +12,28 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90%;
+    width: 95%;
     height: 100vh;
     grid-column: 1;
-    background-color: #2A2A2A;
-    
+    background-color: #8aced2;
+     
 }
 
-#main-logo {
+#javeriana-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-top: 10vh solid #2A2A2A;
-    border-bottom: 3vh solid #2A2A2A;
+    border-top: 1vh solid #8aced2; 
+    border-bottom: 3vh solid #8aced2;
     width: 75%;
 }
 
 .margin-sidebar {
-    height: 3px;
+    height: 2px;
     background-color: #383838;
     width: 85%;
     border: none;
-}
+}   
 
 .categories-sidebar {
     display: flex;
@@ -44,8 +45,12 @@
 }
 
 .imgproof {
-    height: 7vh;
+    height: auto;
     width: auto;
+    max-height: 58px;
+    max-width: 350px;
+    min-width: 1px;
+    margin-top: 29px;
 }
 
 .imgproog:hover {
@@ -76,6 +81,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 40px;
     width: 100%;
     height: auto;
     grid-column: 1;
@@ -83,9 +89,10 @@
 
 #add-img {
     display: block;
+    margin-top: 29px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -96,11 +103,13 @@
 }
 
 
-#add-button {
-    height: 0px;
-    width: auto;
+#create-button {
+    margin-left: 0vh;
+    margin-right: 0vh;
+    width: 75%;
+    height: 0vh;
     border: none;
-    background-color: white;
+    background-color: #8aced2;
 
 }
 

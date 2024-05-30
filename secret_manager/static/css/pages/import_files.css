@@ -1,0 +1,17 @@
+
+#title-allitems {
+
+    border-top: 5vh solid transparent;
+    border-bottom: 3vh solid transparent;
+    border-left: 6vh solid transparent;
+    height: 28%;
+}
+
+.top-sidebar {
+    width: 1451px;           
+    height: 165px;
+    margin-left: -22px;
+    margin-top: -140px;          
+    background: #d9d9d9d9;
+}
+

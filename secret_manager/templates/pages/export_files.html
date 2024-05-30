@@ -1,14 +1,24 @@
 {% extends "layout/dashboard.html" %}
 
 {% block title %}
-Secret Manager - Export
+Secret manager: home
 {% endblock title %}
+
+{% block subheader %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/pages/secret_manager.css') }}">
+{% endblock subheader %}
+
 
 
 {% block dashboard_content%}
-
+    <div id="div-title">
+        <img src="../../static/img/exportitem.png" id="title-allitems">
+        <div>
+            <div class="top-sidebar"></div>
+        </div> 
+    </div>
     <form action="{{ url_for('manager_resource.export_secrets') }}" method="post" enctype="multipart/form-data">
-        <label for="file">File</label>
+        <label for="file">Selecciona tu archivo para exportar</label>
         <input type="submit" value="Export">
     </form>
 

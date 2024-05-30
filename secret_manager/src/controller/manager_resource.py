@@ -45,6 +45,24 @@ def import_secrets():
 def export_secrets():
     return send_file(os.path.join(os.getcwd(), "secret_manager\src\service", "file.csv"), download_name="prueba.csv" ) 
 
+def create_password():
+    print(request.headers)
+    payload = dict(request.form)
+    logger.info(request.files)
+    passwords.append(payload)
+    return redirect(url_for("manager_resource.secrets_home"))
+
+def secrets_home():
+    passwords = [{
+        "name": "Kevin",
+        "password": "realmadridsubcampeon"
+        },
+        {
+        "name": "Aldo",
+        "password": "elabericapalab"   
+        }
+        ]
+    return render_template("pages/secret_manager.html", passwords= passwords)
 
 @MANAGER_RESOURCE.route("/secret-manager/import_docs",
                         methods=["GET"])
